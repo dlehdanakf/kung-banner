@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width" />
     <style>
       html, body {margin: 0 !important;font-size: 0;line-height: 0;}
-      a {display: block;text-align: center;}
+      a {display: block;text-align: center;position: relative;}
+      a::before {content: '';position: absolute;top: 0;left: 0;bottom: 0;right: 0;border: 1px solid rgba(0,0,0,0.2);}
     </style>
   </head>
   <body>

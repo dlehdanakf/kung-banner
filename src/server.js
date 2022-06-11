@@ -160,6 +160,12 @@ var DEFAULTS = {
     app.use("/manage", express.static("src/views"));
     app.use("/image", express.static("attachments"));
     app.use("/asset", express.static("assets"));
+    app.get("/", function (req, res) {
+        res.redirect("https://kung.kr");
+    });
+    app.get("/instance", function (req, res) {
+        res.redirect("https://kung.kr");
+    });
     app.get("/instance/main", function (req, res) {
         var banners = bannerManager.getOnAir().filter(function (_a) {
             var pcMain = _a.pcMain;

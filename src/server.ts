@@ -179,6 +179,13 @@ const DEFAULTS: Record<"main" | "aside" | "mobile", Banner> = {
   app.use("/image", express.static("attachments"));
   app.use("/asset", express.static("assets"));
 
+  app.get("/", (req, res) => {
+    res.redirect("https://kung.kr");
+  });
+
+  app.get("/instance", (req, res) => {
+    res.redirect("https://kung.kr");
+  });
   app.get("/instance/main", (req, res) => {
     const banners = bannerManager.getOnAir().filter(({ pcMain }) => !!pcMain);
     const banner = pickBannerRandomly(banners) || DEFAULTS.main;
