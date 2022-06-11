@@ -1,8 +1,14 @@
-import path from "path";
-import fs from "fs";
-import express from "express";
-import multer from "multer";
-import * as uuid from "uuid";
+// import path from "path";
+// import fs from "fs";
+// import express from "express";
+// import multer from "multer";
+// import * as uuid from "uuid";
+
+const path = require("path");
+const fs = require("fs");
+const express = require("express");
+const multer = require("multer");
+const uuid = require("uuid");
 
 type BannerRecord = Record<string, Banner>;
 type Banner = {
