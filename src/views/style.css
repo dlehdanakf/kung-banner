@@ -1,0 +1,36 @@
+body {
+  padding: 30px;
+}
+
+hr {
+  margin-block: 20px;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+table td {
+  white-space: nowrap;
+}
+
+form.aui.register {
+  border: 1px solid #ccc;
+  border-radius: 3.01px;
+  margin: 10px 0 20px 0;
+  padding: 20px;
+}
+
+.upload-image input[type="file"] {
+  display: none;
+}
+.upload-image .banner-preview {
+  background-color: #ebecf0;
+  margin-top: 10px;
+  font-size: 0;
+  line-height: 0;
+}
+.upload-image .banner-preview img {
+  width: 100%;
+  height: 100%;
+}
+.upload-image .banner-preview:empty {
+  display: none;
+}

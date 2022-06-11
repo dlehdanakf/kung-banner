@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <style>
+      html, body {margin: 0 !important;font-size: 0;line-height: 0;}
+      a {display: block;text-align: center;}
+    </style>
+  </head>
+  <body>
+    <a href="{{url}}" target="_blank" style="background-color: {{backgroundColor}}">
+      <img src="{{image}}" alt="{{title}}" height="{{height}}" />
+    </a>
+  </body>
+</html>
